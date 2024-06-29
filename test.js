@@ -1,4 +1,4 @@
-import makeHtml from './index.js';
+import makeHtml from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@1.0.0-alpha/index.js';
 
 const element = makeHtml({
 	name: 'form',
