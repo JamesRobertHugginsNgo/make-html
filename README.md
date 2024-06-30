@@ -18,3 +18,6 @@ Each module serves a specific purpose in manipulating HTML elements:
   - [Make HTML](./make-html/make-html.md): Create HTML elements.
   - [Set Attributes](./make-html/set-attributes.md): Set one or more attributes on an element.
   - [Set Styles](./make-html/set-styles.md): Apply styles to elements.
+- Make UI
+  - Make UI: Create HTML elements returning additional properties.
+  - Merge Values: Merge 2 values including nested values in object types.
