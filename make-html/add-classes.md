@@ -1,6 +1,6 @@
 # Add Classes Documentation
 
-[Source Code](https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/add-classes.js)
+[Source Code](https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/make-html/add-classes.js)
 
 The `addClasses` function allows you to add multiple class names to an element using the `Element.classList.add` method. Any `undefined` or `null` values in the array will be ignored.
 
@@ -11,7 +11,7 @@ The `addClasses` function allows you to add multiple class names to an element u
 To use the `addClasses` function, import it from the CDN:
 
 ```javascript
-import addClasses from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/add-classes.js';
+import addClasses from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/make-html/add-classes.js';
 ```
 
 ### Adding Classes

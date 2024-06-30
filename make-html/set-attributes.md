@@ -1,6 +1,6 @@
 # Set Attributes Documentation
 
-[Source Code](https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/set-attributes.js)
+[Source Code](https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/make-html/set-attributes.js)
 
 The `setAttributes` function allows you to set one or more attributes on a specified element using the `Element.setAttribute` method. Any attributes with `undefined` or `null` values will be ignored.
 
@@ -11,7 +11,7 @@ The `setAttributes` function allows you to set one or more attributes on a speci
 To use the `setAttributes` function, import it from the CDN:
 
 ```javascript
-import setAttributes from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/set-attributes.js';
+import setAttributes from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/make-html/set-attributes.js';
 ```
 
 ### Setting Attributes

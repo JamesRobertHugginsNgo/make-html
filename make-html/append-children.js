@@ -1,5 +1,7 @@
 import makeHtml from './make-html.js';
 
+const objectConstructor = ({}).constructor;
+
 export default function appendChildren(element, children) {
 	for (const child of children) {
 		if (child == null) {
@@ -9,7 +11,7 @@ export default function appendChildren(element, children) {
 			element.append(makeHtml({ children: child }));
 			continue;
 		}
-		if (child.constructor && child.constructor === ({}).constructor) {
+		if (child.constructor && child.constructor === objectConstructor) {
 			console.log('object', makeHtml(child) instanceof Node);
 			element.append(makeHtml(child));
 			continue;

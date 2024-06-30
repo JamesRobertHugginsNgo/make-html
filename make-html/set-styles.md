@@ -1,6 +1,6 @@
 # Set Styles Documentation
 
-[Source Code](https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/set-styles.js)
+[Source Code](https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/make-html/set-styles.js)
 
 The `setStyles` function allows you to add styles to an element using the `Element.style` property. Any `undefined` or `null` values will be ignored.
 
@@ -11,7 +11,7 @@ The `setStyles` function allows you to add styles to an element using the `Eleme
 To use the `setStyles` function, import it from the CDN:
 
 ```javascript
-import setStyles from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/set-styles.js';
+import setStyles from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/make-html/set-styles.js';
 ```
 
 ### Setting Styles

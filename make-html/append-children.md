@@ -1,6 +1,6 @@
 # Append Children Documentation
 
-[Source Code](https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/append-children.js)
+[Source Code](https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/make-html/append-children.js)
 
 The `appendChildren` function allows you to append one or more text nodes or HTML elements to another HTML element using the `Element.append` method.
 
@@ -13,7 +13,7 @@ When using `makeHtml` definitions, it leverages the [makeHtml module](./make-htm
 To use the `appendChildren` function, import it from the CDN:
 
 ```javascript
-import appendChildren from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/append-children.js';
+import appendChildren from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/make-html/append-children.js';
 ```
 
 ### Appending Children

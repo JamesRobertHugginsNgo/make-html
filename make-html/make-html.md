@@ -1,6 +1,6 @@
 ## Make HTML Documentation
 
-[Source Code](https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/make-html.js)
+[Source Code](https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/make-html/make-html.js)
 
 The `makeHtml` function allows you to create an HTML element using a single function call. This function accepts an object that describes the element and its children.
 
@@ -11,7 +11,7 @@ The `makeHtml` function allows you to create an HTML element using a single func
 To use the `makeHtml` function, import it from the CDN:
 
 ```javascript
-import makeHtml from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/make-html.js';
+import makeHtml from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/make-html/make-html.js';
 ```
 
 ### Creating an Element
