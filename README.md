@@ -1,40 +1,19 @@
-# make-html
+# Make HTML Documentation
 
-Version 1.1.0
+**Version**: 2.0.0
 
-A single function for creating Document Fragment or HTML Elements.
+[Source Code](https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/index.js)
 
-## JS Delivr URL
+## Overview
 
-https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@1.1.0/index.js
+Make HTML is a collection of modules designed for creating document fragments or elements efficiently. These modules can be imported individually or as a bundle via the JS Delivr CDN. They can also be copied directly into your project with minimal to no modifications.
 
-## Usage
+## Modules
 
-``` JavaScript
-import makeHtml from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@1.1.0/index.js';
+Each module serves a specific purpose in manipulating HTML elements:
 
-const element = makeHtml({
-  name: 'div',
-  attributes: { id: 'div-id' },
-  classes: ['div-class'],
-  styles: { 
-    backgroundColor: 'lightgrey',
-    padding: '1rem'
-  },
-  children: [
-    'Hello',
-    [
-      ' ',
-      {
-        name: 'strong',
-        children: ['World']
-      }
-    ]
-  ],
-  callback(element) {
-    element.addEventListener('click', () => void console.log('CLICK'));
-  }
-});
-
-document.body.append(element);
-```
+- [Add Classes](./add-classes.md): Easily add classes to elements.
+- [Append Children](./append-children.md): Append child elements to a parent element.
+- [Make HTML](./make-html.md): Create HTML elements.
+- [Set Attributes](./set-attributes.md): Set one or more attributes on an element.
+- [Set Styles](./set-styles.md): Apply styles to elements.
