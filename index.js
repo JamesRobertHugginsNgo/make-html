@@ -74,7 +74,7 @@ export default function makeHtml(definition) {
 	}
 
 	if (callback) {
-		callback(element);
+		callback(element, definition);
 	}
 
 	return element
