@@ -1,17 +1,17 @@
 # make-html
 
-Version 1.0.0
+Version 1.1.0
 
 A single function for creating Document Fragment or HTML Elements.
 
 ## JS Delivr URL
 
-https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@1.0.0/index.js
+https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@1.1.0/index.js
 
 ## Usage
 
 ``` JavaScript
-import makeHtml from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@1.0.0/index.js';
+import makeHtml from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@1.1.0/index.js';
 
 const element = makeHtml({
   name: 'div',
