@@ -12,7 +12,6 @@ export default function appendChildren(element, children) {
 			continue;
 		}
 		if (child.constructor && child.constructor === objectConstructor) {
-			console.log('object', makeHtml(child) instanceof Node);
 			element.append(makeHtml(child));
 			continue;
 		}
