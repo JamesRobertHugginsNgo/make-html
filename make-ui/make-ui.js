@@ -10,7 +10,7 @@ export default function makeUi(definition, options = {}) {
 	const { type } = definition;
 	if (type) {
 		const { uiMakers: uiMakersOption = uiMakers } = options;
-		return uiMakersOption[type](definition, options);
+		return uiMakersOption[type](definition, options = {});
 	}
 
 	const { children, callback, ...htmlDefinition } = definition;
@@ -26,13 +26,13 @@ export default function makeUi(definition, options = {}) {
 			}
 
 			if (Array.isArray(child)) {
-				const { element: childElement, ...childResult } = makeUi({ children: child });
+				const { element: childElement, ...childResult } = makeUi({ children: child }, options);
 				result = mergeValuesOptions(result, childResult);
 				return childElement;
 			}
 
 			if (child.constructor && child.constructor === objectConstructor) {
-				const { element: childElement, ...childResult } = makeUi(child);
+				const { element: childElement, ...childResult } = makeUi(child, options);
 				result = mergeValuesOptions(result, childResult);
 				return childElement;
 			}

@@ -24,9 +24,12 @@ export default function mergeValues(value1, value2, options = {}) {
 	const { mergeFunctions } = options;
 	if (mergeFunctions) {
 		for (const mergeFunction of mergeFunctions) {
-			const { merged = false, value } = mergeFunction(value1, value2, options);
-			if (merged) {
-				return value;
+			const result = mergeFunction(value1, value2, options);
+			if (result) {
+				const { merged = false, value } = result;
+				if (merged) {
+					return value;
+				}
 			}
 		}
 	}

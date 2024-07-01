@@ -8,8 +8,9 @@ import mergeValues from './merge-values.js';
 // GREETING UI MAKER
 // ==
 
-uiMakers['greeting'] = (definition, options) => {
+uiMakers['greeting'] = (definition, options = {}) => {
 	const { greeting } = definition;
+
 	const { mergeValues: mergeValuesOptions = mergeValues } = options;
 
 	const result = makeUi({
@@ -30,7 +31,7 @@ uiMakers['greeting'] = (definition, options) => {
 // MESSAGE UI MAKER
 // ==
 
-uiMakers['message'] = (definition, options) => {
+uiMakers['message'] = (definition, options = {}) => {
 	const { message } = definition;
 	const { mergeValues: mergeValuesOptions = mergeValues } = options;
 
@@ -52,7 +53,7 @@ uiMakers['message'] = (definition, options) => {
 // DISPLAY UI MAKER
 // ==
 
-uiMakers['display'] = (definition, options) => {
+uiMakers['display'] = (definition, options = {}) => {
 	const { greeting, message } = definition;
 	return makeUi({
 		name: 'p',
@@ -63,9 +64,9 @@ uiMakers['display'] = (definition, options) => {
 			padding: '0.5rem 1rem'
 		},
 		children: [
-			{ type: 'greeting', greeting },
+			[{ type: 'greeting', greeting }],
 			' ',
-			{ type: 'message', message }
+			[{ type: 'message', message }]
 		]
 	}, options);
 }
