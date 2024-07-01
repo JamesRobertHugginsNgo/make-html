@@ -1,0 +1,9 @@
+.make-form {
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+
+	&>.make-form-title {
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+	}
+}
