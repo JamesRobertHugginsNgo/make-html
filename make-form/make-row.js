@@ -2,7 +2,7 @@ import makeUi, { uiMakers } from '../make-ui/make-ui.js';
 
 import makeformMergeValues from './make-form-merge-values.js';
 
-import './make-text-field.js';
+import './make-input-field.js';
 
 export default function makeRow(definition, options = {}) {
 	const { id, fields } = definition;
