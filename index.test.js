@@ -1,4 +1,4 @@
-import makeHtml from './make-html.js';
+import { makeHtml } from './index.js';
 
 const element = makeHtml({
 	name: 'form',
