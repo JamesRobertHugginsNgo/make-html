@@ -1,40 +1,33 @@
-# make-html
+# Make HTML
 
-Version 1.1.0
+**Version:** 2.0.0
 
-A single function for creating Document Fragment or HTML Elements.
-
-## JS Delivr URL
-
-https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@1.1.0/index.js
-
-## Usage
+## Index
 
 ``` JavaScript
-import makeHtml from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@1.1.0/index.js';
+import { addClasses, appendChildren, makeHtml, setAttributes, setStyles } from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/index.js';
+```
 
-const element = makeHtml({
-  name: 'div',
-  attributes: { id: 'div-id' },
-  classes: ['div-class'],
-  styles: { 
-    backgroundColor: 'lightgrey',
-    padding: '1rem'
-  },
-  children: [
-    'Hello',
-    [
-      ' ',
-      {
-        name: 'strong',
-        children: ['World']
-      }
-    ]
-  ],
-  callback(element) {
-    element.addEventListener('click', () => void console.log('CLICK'));
-  }
-});
+## Add Classes
 
-document.body.append(element);
+``` JavaScript
+import addClasses from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/add-classes.js';
+```
+
+## Make HTML
+
+``` JavaScript
+import makeHtml, { appendChildren } from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/make-html.js';
+```
+
+## Set Attributes
+
+``` JavaScript
+import setStyles from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/set-attributes.js';
+```
+
+## Set Styles
+
+``` JavaScript
+import setStyles from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.0.0/set-styles.js';
 ```
