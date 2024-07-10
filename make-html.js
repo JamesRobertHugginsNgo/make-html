@@ -8,18 +8,18 @@ import setStyles from './set-styles.js';
  * @param {[any]} children Children definition.
  * @returns DocumentFragment | HTMLElement
  */
-export function appendChildren(element, children) {
+export function appendChildren(element, children, namespace) {
 	const objectConstructor = ({}).constructor;
 	for (const child of children) {
 		if (child == null) {
 			continue;
 		}
 		if (Array.isArray(child)) {
-			element.append(makeHtml({ children: child }));
+			element.append(makeHtml({ namespace, children: child }));
 			continue;
 		}
 		if (child.constructor && child.constructor === objectConstructor) {
-			element.append(makeHtml(child));
+			element.append(makeHtml({ namespace, ...child }));
 			continue;
 		}
 		element.append(child);
@@ -33,22 +33,45 @@ export function appendChildren(element, children) {
  * @returns {DocumentFragment | HTMLElement}
  */
 export default function makeHtml(definition) {
-	const { name, attributes, classes, styles, children, callback } = definition;
-	const element = !name ? document.createDocumentFragment() : document.createElement(name);
+	const {
+		namespace,
+		name,
+		attributes,
+		classes,
+		styles,
+		children,
+		callback
+	} = definition;
+
+	console.log(namespace);
+
+	const element = !name
+		? document.createDocumentFragment()
+		: !namespace
+			? document.createElement(name)
+			: document.createElementNS(namespace, name);
+
+	console.log(element);
+
 	if (attributes) {
 		setAttributes(element, attributes);
 	}
+
 	if (classes) {
 		addClasses(element, classes);
 	}
+
 	if (styles) {
 		setStyles(element, styles);
 	}
+
 	if (children) {
-		appendChildren(element, children);
+		appendChildren(element, children, namespace);
 	}
+
 	if (callback) {
 		callback(element, definition);
 	}
+
 	return element
 }
