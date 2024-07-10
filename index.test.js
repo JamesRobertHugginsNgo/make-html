@@ -1,4 +1,4 @@
-import { makeHtml } from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.1.0-alpha/index.js';
+import { makeHtml } from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.1.0/index.js';
 // import { makeHtml } from './index.js';
 
 const element = makeHtml({
