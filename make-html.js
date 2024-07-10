@@ -43,15 +43,11 @@ export default function makeHtml(definition) {
 		callback
 	} = definition;
 
-	console.log(namespace);
-
 	const element = !name
 		? document.createDocumentFragment()
 		: !namespace
 			? document.createElement(name)
 			: document.createElementNS(namespace, name);
-
-	console.log(element);
 
 	if (attributes) {
 		setAttributes(element, attributes);
