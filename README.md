@@ -2,9 +2,7 @@
 
 **Version:** 2.1.1
 
-## Usage
-
-### Bundle
+## Bundle
 
 Import the necessary modules from the bundled package:
 
@@ -12,7 +10,7 @@ Import the necessary modules from the bundled package:
 import { addClasses, appendChildren, makeHtml, setAttributes, setStyles } from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.1.1/index.js';
 ```
 
-### Add Classes Module
+## Add Classes Module
 
 This module allows you to add multiple classes to an HTML element, filtering out any `undefined` or `null` values.
 
@@ -24,7 +22,7 @@ const classes = ['class1', null, 'class2', undefined, 'class3'];
 addClasses(element, classes); // OUTPUT: <div class="class1 class2 class3"></div>
 ```
 
-### Make HTML Module
+## Make HTML Module
 
 Create complex HTML structures from a JavaScript object definition and append children elements.
 
@@ -81,7 +79,7 @@ const svgChildren = [{
 appendChildren(svg, svgChildren, 'http://www.w3.org/2000/svg');
 ```
 
-### Set Attributes Module
+## Set Attributes Module
 
 Set multiple attributes on an HTML element, ignoring any attributes with `undefined` or `null` values.
 
@@ -93,7 +91,7 @@ const attributes = { id: 'div-id', type: null, 'data-custom': '' };
 setAttributes(element, attributes); // OUTPUT: <div id="div-id" data-custom></div>
 ```
 
-### Set Styles Module
+## Set Styles Module
 
 Apply multiple styles to an HTML element, ignoring any styles with `undefined` or `null` values.
 
@@ -108,7 +106,3 @@ const styles = {
 };
 setStyles(element, styles); // OUTPUT: <div style="background-color: #eeeeee; color: #000000;"></div>
 ```
-
-## External Dependencies
-
-None.
