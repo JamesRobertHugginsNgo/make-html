@@ -2,12 +2,6 @@ import addClasses from './add-classes.js';
 import setAttributes from './set-attributes.js';
 import setStyles from './set-styles.js';
 
-/**
- * Appends a children definition to a document fragment or HTML element.
- * @param {DocumentFragment | HTMLElement} element The HTML element.
- * @param {[any]} children Children definition.
- * @returns DocumentFragment | HTMLElement
- */
 export function appendChildren(element, children, namespace) {
 	const objectConstructor = ({}).constructor;
 	for (const child of children) {
@@ -27,11 +21,6 @@ export function appendChildren(element, children, namespace) {
 	return element;
 }
 
-/**
- * Takes a definition and creates a document fragment or an HTML element.
- * @param {object} definition HTML element definition.
- * @returns {DocumentFragment | HTMLElement}
- */
 export default function makeHtml(definition) {
 	const {
 		namespace,

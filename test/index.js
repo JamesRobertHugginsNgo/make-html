@@ -1,5 +1,5 @@
-import { makeHtml } from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.1.1/index.js';
-// import { makeHtml } from './index.js';
+import { makeHtml } from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@3.0.0-alpha/src/index.js';
+// import { makeHtml } from '../src/index.js';
 
 const element = makeHtml({
 	name: 'form',
