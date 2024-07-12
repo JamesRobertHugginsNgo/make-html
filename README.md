@@ -1,13 +1,13 @@
 # Make HTML
 
-**Version:** 2.1.1
+**Version:** 3.0.0-alpha
 
 ## Bundle
 
 Import the necessary modules from the bundled package:
 
 ```javascript
-import { addClasses, appendChildren, makeHtml, setAttributes, setStyles } from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.1.1/src/index.js';
+import { addClasses, appendChildren, makeHtml, setAttributes, setStyles } from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@3.0.0-alpha/src/index.js';
 ```
 
 ## Add Classes Module
@@ -15,7 +15,7 @@ import { addClasses, appendChildren, makeHtml, setAttributes, setStyles } from '
 This module allows you to add multiple classes to an HTML element, filtering out any `undefined` or `null` values.
 
 ```javascript
-import addClasses from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.1.1/src/add-classes.js';
+import addClasses from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@3.0.0-alpha/src/add-classes.js';
 
 const element = document.createElement('div');
 const classes = ['class1', null, 'class2', undefined, 'class3'];
@@ -27,7 +27,7 @@ addClasses(element, classes); // OUTPUT: <div class="class1 class2 class3"></div
 Create complex HTML structures from a JavaScript object definition and append children elements.
 
 ```javascript
-import makeHtml, { appendChildren } from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.1.1/src/make-html.js';
+import makeHtml, { appendChildren } from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@3.0.0-alpha/src/make-html.js';
 
 // Making an HTML Element
 const definition = {
@@ -84,7 +84,7 @@ appendChildren(svg, svgChildren, 'http://www.w3.org/2000/svg');
 Set multiple attributes on an HTML element, ignoring any attributes with `undefined` or `null` values.
 
 ```javascript
-import setAttributes from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.1.1/src/set-attributes.js';
+import setAttributes from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@3.0.0-alpha/src/set-attributes.js';
 
 const element = document.createElement('div');
 const attributes = { id: 'div-id', type: null, 'data-custom': '' };
@@ -96,7 +96,7 @@ setAttributes(element, attributes); // OUTPUT: <div id="div-id" data-custom></di
 Apply multiple styles to an HTML element, ignoring any styles with `undefined` or `null` values.
 
 ```javascript
-import setStyles from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@2.1.1/src/set-styles.js';
+import setStyles from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-html@3.0.0-alpha/src/set-styles.js';
 
 const element = document.createElement('div');
 const styles = {
