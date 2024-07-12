@@ -39,7 +39,7 @@ const definition = {
 };
 const element = makeHtml(definition); // OUTPUT: <div id="div-id" class="div-class" style="background-color: #efefef;"><strong>Hello</strong></div>
 
-const children = [' ', { name: 'span', children: ['World'] }];
+const children = [' ', null, { name: 'span', children: ['World'] }];
 appendChildren(element, children); // OUTPUT: <div id="div-id" class="div-class" style="background-color: #efefef;"><strong>Hello</strong> <span>World</span></div>
 ```
 
@@ -97,8 +97,8 @@ import setAttributes from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/mak
 
 ``` JavaScript
 const element = document.createElement('div');
-const attributes = { id: 'div-id' };
-setAttributes(element, styles); // OUTPUT: <div id="div-id"></div>
+const attributes = { id: 'div-id', type: null, 'data-custom': '' };
+setAttributes(element, attributes); // OUTPUT: <div id="div-id" data-custom></div>
 ```
 
 ### Set Styles Module
@@ -111,6 +111,7 @@ import setStyles from 'https://cdn.jsdelivr.net/gh/JamesRobertHugginsNgo/make-ht
 const element = document.createElement('div');
 const styles = {
   backgroundColor: '#eeeeee',
+  border: null,
   color: '#000000'
 };
 setStyles(element, styles); // OUTPUT: <div style="background-color: #eeeeee; color: #000000;"></div>
